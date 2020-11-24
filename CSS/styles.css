@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+/* Default styles fixes */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fbfbfb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Common typography styles */
+.paragraph {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.text-body-bold {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sub-body-bold {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.heading-lg {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 1.5rem;
+}
+
+.heading-md {
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 1.5rem;
+}
+
+/* Common layout styles */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 180px;
+  height: 45px;
+  color: white;
+  font-weight: 700;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn.btn-primary {
+  transition: 0.4s all ease-out;
+  background-color: #ff8c1a;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: #e05412;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.fluid {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.bordered {
+  border: 3px solid #3a3a3a;
+}
+
+.solid-shadow {
+  box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.07);
+}
+
+/* Navbar styles */
+
+nav {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 90px;
+}
+
+nav .nav-items {
+  display: flex;
+  align-items: center;
+  color: black;
+  width: 50%;
+  justify-content: space-between;
+}
+
+nav .nav-items a {
+  position: relative;
+  transition: 0.4s color ease-out;
+  text-decoration: none;
+  color: black;
+}
+
+nav .nav-items a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 1px;
+  height: 4px;
+  width: 100%;
+  background-color: #ff8c1a;
+}
+
+nav .nav-items a:hover,
+nav .nav-items a:focus {
+  color: rgb(51, 51, 51);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+  }
+}

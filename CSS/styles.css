@@ -157,6 +157,10 @@ nav .nav-items a:focus {
   color: #333333;
 }
 
+main {
+  min-height: 90vh;
+}
+
 /* Footer styles */
 
 footer {

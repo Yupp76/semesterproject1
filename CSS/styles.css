@@ -103,6 +103,11 @@ body {
   box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.07);
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Navbar styles */
 
 nav {
@@ -149,7 +154,47 @@ nav .nav-items a.active::after {
 
 nav .nav-items a:hover,
 nav .nav-items a:focus {
-  color: rgb(51, 51, 51);
+  color: #333333;
+}
+
+/* Footer styles */
+
+footer {
+  background: #333333;
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
+
+footer .grid-2 {
+  align-items: normal;
+  padding-bottom: 7rem;
+}
+
+footer .footer-menus {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-menus li {
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-menus a {
+  transition: 0.4s all ease-out;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #fbfbfb;
+}
+
+footer .footer-menus a:hover,
+footer .footer-menus a:focus {
+  color: #dddddd;
+}
+
+footer .flex .sub-body-bold {
+  color: darkgray;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -111,6 +111,7 @@
 
 .s5 .grid-2 {
   padding: 0;
+  column-gap: 0;
 }
 
 .s5 .grid-2 .text-content {
@@ -125,4 +126,13 @@
 
 .s5 .text-content .paragraph {
   margin-bottom: 1.5rem;
+}
+
+.s5 .flex-table {
+  padding: 1.5rem;
+  background: #ff8c1a;
+}
+
+.s5 .flex-table .sub-body-bold {
+  color: white;
 }

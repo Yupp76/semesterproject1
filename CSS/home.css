@@ -29,10 +29,23 @@
   background-color: white;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  overflow: hidden;
+  transition: 0.4s all ease-out;
+}
+
+.s1 .card-container:hover {
+  transform: scale(1.02);
+  box-shadow: 20px 15px 0px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
 }
 
 .s1 .card-container:last-of-type {
   margin-right: 0;
+}
+
+.s1 .card-container .card-anchor {
+  text-decoration: none;
+  color: initial;
 }
 
 .s1 .card-container .fluid {
@@ -58,6 +71,17 @@
   margin-top: auto;
   text-decoration: none;
   color: #ff8c1a;
+  transition: 0.4s color ease-out;
+}
+
+.s1 .card-container:hover .arrow-link,
+.s1 .card-container:focus .arrow-link {
+  color: #e05412;
+}
+
+.s1 .card-container:hover .arrow-link img {
+  animation: activeArrow 1s ease-out infinite;
+  filter: brightness(0.8);
 }
 
 .s1 .card-container .arrow-link span {
@@ -173,5 +197,17 @@
   .s2 .grid-2 .heading-md,
   .s3 .grid-2 .heading-md {
     width: 80%;
+  }
+}
+
+@keyframes activeArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }

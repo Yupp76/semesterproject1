@@ -114,16 +114,23 @@
   flex-wrap: wrap;
 }
 
-.s4 .card-container {
+.s4 .card-wrapper {
   max-width: 372px;
   min-width: 300px;
   width: 100%;
-  height: 515px;
-  background-color: white;
+  height: 555px;
+  background-color: #ff8c1a;
   margin-right: 2rem;
 }
 
-.s4 .card-container:last-of-type {
+.s4 .card-wrapper .card-container {
+  width: calc(100% - 2.25rem);
+  height: calc(100% - 2.25rem);
+  margin: 1rem;
+  background-color: white;
+}
+
+.s4 .card-wrapper:last-of-type {
   margin-right: 0;
 }
 
@@ -180,7 +187,7 @@
     margin-bottom: 0;
   }
 
-  .s4 .card-container {
+  .s4 .card-wrapper {
     height: 100%;
     max-width: none;
     margin-right: 0;
